@@ -11,9 +11,7 @@ LOCALREPO_VC_DIR=$LOCALREPO/.git
 
 useradd ${JPY_USER}
 chown ${JPY_USER} /work
-mkdir -p /home/${JPY_USER}/.pip && chown -R ${JPY_USER} /home/${JPY_USER}
 su ${JPY_USER}
-cp /tmp/pip.conf /home/${JPY_USER}/.pip/
 cd /work
 
 # Clone if the repo does not exist, pull otherwise
