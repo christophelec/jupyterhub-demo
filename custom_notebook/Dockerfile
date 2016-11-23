@@ -1,6 +1,6 @@
 FROM jupyter/scipy-notebook:2d878db5cbff
 
-RUN pip install numpy
+RUN pip install numpy pandas ezhc
 
 USER root
 
